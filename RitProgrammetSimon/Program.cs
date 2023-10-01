@@ -15,6 +15,7 @@ namespace RitProgrammetSimon
 
             while (true)
             {
+                Instructions.Draw();
                 Board.Draw(board);
                 ConsoleKeyInfo key = Console.ReadKey();
 
