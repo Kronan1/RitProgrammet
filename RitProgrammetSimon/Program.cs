@@ -19,18 +19,9 @@ namespace RitProgrammetSimon
                 Board.Draw(board);
                 ConsoleKeyInfo key = Console.ReadKey();
 
-                if (key.Key == ConsoleKey.W)
-                {
-
-                }
-
-                if (true)
-                {
-
-                }
                 switch (key.Key)
                 {
-                    case ConsoleKey.W:
+                    case ConsoleKey.UpArrow:
                         board[cursorY, cursorX] = savedChar;
                         cursorY--;
                         if (cursorY >= 0)
@@ -41,7 +32,7 @@ namespace RitProgrammetSimon
                         else { cursorY++; }
                         break;
 
-                    case ConsoleKey.S:
+                    case ConsoleKey.DownArrow:
                         board[cursorY, cursorX] = savedChar;
                         cursorY++;
                         if (cursorY < board.GetLength(0))
@@ -52,7 +43,7 @@ namespace RitProgrammetSimon
                         else { cursorY--; }
                         break;
 
-                    case ConsoleKey.D:
+                    case ConsoleKey.RightArrow:
                         board[cursorY, cursorX] = savedChar;
                         cursorX++;
                         if (cursorX < board.GetLength(1))
@@ -63,7 +54,7 @@ namespace RitProgrammetSimon
                         else { cursorX--; }
                         break;
 
-                    case ConsoleKey.A:
+                    case ConsoleKey.LeftArrow:
                         board[cursorY, cursorX] = savedChar;
                         cursorX--;
                         if (cursorX >= 0)

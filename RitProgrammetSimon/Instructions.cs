@@ -10,10 +10,10 @@ namespace RitProgrammetSimon
     {
         public static void Draw()
         {
-            Console.WriteLine(Convert.ToChar(24) + " - W");
-            Console.WriteLine(Convert.ToChar(17) + " - A");
-            Console.WriteLine(Convert.ToChar(26) + " - D");
-            Console.WriteLine(Convert.ToChar(25) + " - S");
+            Console.WriteLine("Up    - " + Convert.ToChar(24));
+            Console.WriteLine("Left  - " + Convert.ToChar(17));
+            Console.WriteLine("Right - " + Convert.ToChar(26));
+            Console.WriteLine("Down  - " + Convert.ToChar(25));
             Console.WriteLine("Select character and press Enter to paint");
             Console.WriteLine();
         }
